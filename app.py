@@ -89,7 +89,6 @@ def create_app():
             db.session.commit()
             return redirect("/songs")
         return render_template("new_song.html", form=form)
-        # ADD THE NECESSARY CODE HERE FOR THIS ROUTE TO WORK
 
     @app.route("/playlists/<int:playlist_id>/add-song", methods=["GET", "POST"])
     def add_song_to_playlist(playlist_id):
