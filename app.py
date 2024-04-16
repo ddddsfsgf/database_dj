@@ -6,7 +6,7 @@ from forms import NewSongForPlaylistForm, SongForm, PlaylistForm
 def create_app():
     app = Flask(__name__)
     # Please do not modify the following line on submission
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql:///playlist-app')
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://ppgzctlh:ygY30sL1BG7iCfYrT308GsdnrON5fjYC@bubble.db.elephantsql.com/ppgzctlh')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SQLALCHEMY_ECHO'] = True
 
